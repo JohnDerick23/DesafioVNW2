@@ -109,12 +109,6 @@
    gap: 20px;
  }
 
- /* .text-column {
-   flex: 1;
-   max-width: 300px;
-   max-height: 1200;
- } */
-
  .texto-coluna {
    margin-top: 208px;
    flex: 1;
@@ -169,8 +163,6 @@
    font-size: 24px;
    line-height: 1.5;
    margin-bottom: 20px;
-   max-width: 500px;
-   max-height: 1200px;
    line-height: normal;
  }
 
