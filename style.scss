@@ -1,5 +1,5 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +7,10 @@
 }
 
 header {
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
   font-family: "Oswald";
 }
 
@@ -55,11 +55,8 @@ header a:hover {
   width: 100%;
   height: 75vh;
   background: url(_imagens/background.png) no-repeat center center/cover;
-  // background-color: rgba(7, 7, 7, 0.947);
 }
 
-/*+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(20, 28, 26, 0.947);
-}*/
 #space {
   position: absolute;
   font-family: "Oswald";
@@ -94,7 +91,21 @@ header a:hover {
 }
 
 .button:hover {
-  background-color: #0016df;
+  background-color: #394bf1;
+}
+
+.button-contato {
+  background-color: #fff;
+  color: #000000;
+  width: 156px;
+  height: 76px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border: 3px solid black;
+  font-family: "Oswald";
+  cursor: pointer;
 }
 
 .container-texto {
@@ -110,13 +121,13 @@ header a:hover {
   gap: 20px;
 }
 
-.text-column {
-  flex: 1;
-  max-width: 300px;
-  max-height: 1200;
-}
+/* .text-column {
+   flex: 1;
+   max-width: 300px;
+   max-height: 1200;
+ } */
 
-.texto-colunar {
+.texto-coluna {
   margin-top: 208px;
   flex: 1;
   max-width: 600px;
@@ -124,8 +135,8 @@ header a:hover {
 
 .image-column img {
   margin-top: 150px;
-  max-height: 700px;
-  max-width: 100%;
+  max-height: 783px;
+  max-width: 679px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-left: 95px;
@@ -144,7 +155,7 @@ header a:hover {
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 h1 {
@@ -154,14 +165,14 @@ h1 {
   left: 113px;
   gap: 0px;
   opacity: 0px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 36px;
   font-weight: 800;
   line-height: 42.19px;
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 p {
@@ -170,8 +181,8 @@ p {
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 20px;
-  max-width: 500px;
-  max-height: 1200px;
+  /* max-width: 500px;
+   max-height: 1200px; */
   line-height: normal;
 }
 
@@ -209,7 +220,7 @@ p {
   text-align: center;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   height: 20vh;
   top: 10vh;
   color: rgb(0, 23, 233);
@@ -264,13 +275,104 @@ p {
   padding: 0 10px 20px;
 }
 
-.call-to-action {
+.container-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-form h2 {
+  font-family: "Oswald";
+  color: #0026ff;
+  font-size: 1.5rem;
+}
+
+.container-form p {
+  font-family: "Oswald";
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.coluna-esquerda {
+  width: 50%;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.galeria .item {
+  width: 48%;
+  text-align: center;
+}
+
+.galeria .item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.galeria .item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.coluna-direita {
+  width: 40%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
   display: flex;
   flex-direction: column;
-  width: 346px;
-  height: 47px;
-  top: 112px;
-  margin-top: 112px;
-  gap: 0px;
-  opacity: 0px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.75rem;
+  background-color: #0026ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #001bbd;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e0e0e0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer p {
+  text-align: center;
+}
+
+/* # sourceMappingURL=style.css.map */
